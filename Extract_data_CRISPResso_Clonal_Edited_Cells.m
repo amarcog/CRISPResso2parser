@@ -36,14 +36,14 @@ switch coding
 %The next loop iterates the extraction of the following data
 %from each subfolder:
 
-%稵otal aligned reads from the CRISPResso_mapping_statistics.txt
+%路Total aligned reads from the CRISPResso_mapping_statistics.txt
 
-%稵he inframe and frameshift mutations reads from Frameshift_analysis.txt
+%路The inframe and frameshift mutations reads from Frameshift_analysis.txt
 
-%稵otal unModified and modified reads from the 
+%路Total unModified and modified reads from the 
 %CRISPResso_quantification_of_editing_frequency.txt
 
-%稶p to tree Allele frequencies and sequences arising from the 
+%路Up to tree Allele frequencies and sequences arising from the 
 %Alleles_frequency_table_around*.txt
 
     for i=1:numel(FolderList)
@@ -95,8 +95,8 @@ switch coding
         Alignedreads{i} = Readsarray{1, 1}{10, 1};
         InFrameMutations{i} = Mutationsarray{1, 1}{9, 1};
         FrameshiftMutations{i} = Mutationsarray{1, 1}{13, 1};
-        UnModified_reads{i} = Editing_Quantification{1,1}{24,1};
-        Modified_reads{i} = Editing_Quantification{1,1}{25,1};
+        UnModified_reads{i} = Editing_Quantification{1,1}{26,1};
+        Modified_reads{i} = Editing_Quantification{1,1}{27,1};
         Allele1Seq{i} = Allelesfrequencytable{1, 1}{9, 1};
         Allele1Frequency{i} = Allelesfrequencytable{1, 1}{16, 1};
         Ref_Sequence{i} = Allelesfrequencytable{1, 1}{10, 1};
@@ -306,12 +306,12 @@ end
 %The next loop iterates the extraction of the following data
 %from each subfolder:
 
-%稵otal aligned reads from the CRISPResso_mapping_statistics.txt
+%路Total aligned reads from the CRISPResso_mapping_statistics.txt
 
-%稵otal unModified and Modified reads from the 
+%路Total unModified and Modified reads from the 
 %CRISPResso_quantification_of_editing_frequency.txt
 
-%稶p to tree Allele frequencies and sequences arising from the 
+%路Up to tree Allele frequencies and sequences arising from the 
 %Alleles_frequency_table_around*.txt
 
     for i=1:numel(FolderList)
